@@ -1,0 +1,59 @@
+
+ <html> 
+Wilkommens seite 
+<p><strong>&nbsp;<span>Wilkommen beim Trink Tracker&nbsp;</span></strong></p>
+<p><b>Im folgenden werden dir die ersten Schritte aufgezeigt, wie du deinen Trink-</b><b>Konsum besser im &Uuml;berblick hast&nbsp;</b></p>
+<p><img src="https://cdn.jim-nielsen.com/ios/512/drink-water-hydration-tracker-2021-04-13.png" alt="Quellbild anzeigen" width="437" height="437" /></p>
+
+
+html zähler 
+<div class="box" id="links"><a>-</a></div>
+<div class="box" id="mitte"><a>0</a></div>
+<div class="box" id="rechts"><a>+</a></div>
+
+
+css zähler
+.box {
+  width:100px;
+  height:100px;
+  background-color:gray;
+  float:left;
+  text-align:center;
+  font-family:arial;
+  color:white;
+  font-size:200%;
+  line-height:100px;
+  -webkit-user-select:none;
+}
+#links {
+  background-color:#EF4836;
+  cursor:pointer;
+}
+#links:hover {
+  background-color:#AF4836;
+}
+#mitte {
+  background-color:#D2D7D3;
+}
+#rechts {
+  background-color:#1BBC9B;
+  cursor:pointer;
+}
+#rechts:hover {
+  background-color:#6BBC9B;
+}
+ 
+
+js zähler
+ var counter = 0;
+
+$("#links").click(function(){
+  counter = counter - 100;
+  $("#mitte a").text(counter);
+});
+
+$("#rechts").click(function(){
+  counter = counter + 100;
+  $("#mitte a").text(counter);
+});
+</html>
