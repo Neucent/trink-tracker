@@ -7,7 +7,7 @@ Wilkommens seite
 
 
 html zähler 
-<div class="box" id="links"><a>-</a></div>
+<div class="box" id="links"><a>-</a></div> //Hi this is my program
 <div class="box" id="mitte"><a>0</a></div>
 <div class="box" id="rechts"><a>+</a></div>
 
@@ -19,7 +19,7 @@ css zähler
   background-color:gray;
   float:left;
   text-align:center;
-  font-family:arial;
+  font-family:arial; 
   color:white;
   font-size:200%;
   line-height:100px;
